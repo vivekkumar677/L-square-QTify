@@ -13,9 +13,7 @@ const Navbar = () => {
         <Search />
         <Button />
       </div>
-      <div className={styles.hero}>
-        <Hero />
-      </div>
+      <Hero />
     </>
   );
 };
