@@ -1,8 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import HeroImage from "../../assets/headphone.png"
-
-import "./hero.css";
+import "../Hero/hero.css";
 
 export default function Hero(){
     return(

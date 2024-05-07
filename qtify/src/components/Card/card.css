@@ -1,0 +1,13 @@
+.card-body{ 
+    margin-bottom: 30px;
+}
+
+.card{
+    border-radius: 20px;
+    max-width: 345px;
+}
+
+.card-image{
+    height: 250px;  
+}
+
