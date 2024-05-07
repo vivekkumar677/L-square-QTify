@@ -1,15 +1,29 @@
 import React from "react";
-import styles from "./Hero.module.css";
-import hero from "../../assets/headphone.png";
-const Hero = () => {
+import { Box } from "@mui/material";
+import HeroImage from "../../assets/headphone.png"
 
-    return (
-        <div className={styles.hero}>
-            <h1>100 Thousand Songs, ad-free 
-                <br/> Over thousands podcast episodes</h1>
-                <img src={hero} alt="hero" />
-        </div>
-    );
-};
+import "./hero.css";
 
-export default Hero;
+export default function Hero(){
+    return(
+        <>
+            <Box
+            sx={{
+                display: "flex",
+                justifyContent: "center",
+                // width: "100vw",
+                height: "30%",
+                color: "white"
+            }}>
+                <div className="content">
+                    <div className="text"> 
+                        <p>100 Thousand Songs, ad-free</p>
+                        <p>Over thousands podcast episodes</p>
+                    </div>
+                   
+                    <img src={HeroImage} alt="hero" />
+                </div>
+            </Box>
+        </>
+    )
+}

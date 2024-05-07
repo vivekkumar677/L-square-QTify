@@ -1,10 +1,13 @@
 import React from "react";
-import styles from "./Button.module.css";
+import "./button.css";
 
-const Button = () => {
 
-    return (
-            <button className={styles.button} type="submit">Give Feedback</button>
-    );
-};
-export default Button;
+export default function Button(){
+    return(
+        <>
+            <button className="button">
+                Give Feedback
+            </button>
+        </>
+    )
+}

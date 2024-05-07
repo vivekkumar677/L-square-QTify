@@ -1,0 +1,44 @@
+.logo{
+    height: 34px;
+    width: 67px;
+}
+
+.search{
+    
+    Width: 28vw;
+    Height: 48px;
+    border: 1px solid black;
+    border-right: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: #121212;
+    font-size: 16px;
+    padding-left: 15px;
+
+}
+
+.search::-webkit-search-cancel-button {
+    display: none;
+  }
+  
+
+.searchIcon{
+    background: white;
+    padding: 13px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid black;
+    border-left: 0.5px solid gray ;
+    width: 38px;
+    height: 20px;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    margin: 25px
+}
+

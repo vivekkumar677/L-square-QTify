@@ -1,0 +1,10 @@
+.button{
+    background: #121212;
+    color: rgba(52, 201,75, 1);
+    border-radius: 12px;
+    padding: 16px 16px 16px 16px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+}
