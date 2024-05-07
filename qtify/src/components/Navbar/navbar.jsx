@@ -42,7 +42,6 @@ export default function Navbar(){
                         <SearchIcon className='searchIcon'/>
                     </div>
                     <Button/>
-                  
                 </Box>
             </Box>
         </>
