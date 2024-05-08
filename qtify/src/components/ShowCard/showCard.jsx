@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import "./showCard.css";
 import Cards from "../Card/card";
 import Carousel from "../Carousel/carousel";
@@ -9,10 +9,10 @@ import Tab from "@mui/material/Tab";
 import axios from "axios";
 
 export default function ShowCard({ text, type }) {
-  const [collapse, setCollapse] = React.useState(false);
-  const [cardData, setCardData] = React.useState([]);
-  const [tabs, setTabs] = React.useState([]);
-  const [selectTab, setSelectTab] = React.useState(0);
+  const [collapse, setCollapse] = useState(true);
+  const [cardData, setCardData] = useState([]);
+  const [tabs, setTabs] = useState([]);
+  const [selectTab, setSelectTab] = useState(0);
 
   let url;
 
@@ -39,7 +39,7 @@ export default function ShowCard({ text, type }) {
     setSelectTab(newValue);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(url);
@@ -115,10 +115,10 @@ export default function ShowCard({ text, type }) {
           {collapse ? (
             <Carousel cardData={renderCards} type={type} />
           ) : (
-            <Grid container spacing={2}>
+            <Grid container spacing={3}>
               {renderCards.length !== 0 &&
                 renderCards.map((card) => (
-                  <Grid item xs={12} sm={6} md={4} lg={3} key={card.id}>
+                  <Grid item xs={6} md={2} key={card.id}>
                     <Cards card={card} type={type} />
                   </Grid>
                 ))}
