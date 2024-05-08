@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navbar from '../src/components/Navbar/navbar';
+import Navbar from './components/Navbar/navbar';
 import Hero from './components/Hero/Hero';
 import ShowCard from './components/ShowCard/showCard';
 
