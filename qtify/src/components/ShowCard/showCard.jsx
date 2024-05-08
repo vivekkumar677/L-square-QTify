@@ -9,7 +9,7 @@ import Tab from "@mui/material/Tab";
 import axios from "axios";
 
 export default function ShowCard({ text, type }) {
-  const [collapse, setCollapse] = useState(true);
+  const [collapse, setCollapse] = useState(false);
   const [cardData, setCardData] = useState([]);
   const [tabs, setTabs] = useState([]);
   const [selectTab, setSelectTab] = useState(0);
