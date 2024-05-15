@@ -59,10 +59,10 @@ export default function ShowCard({ text, type }) {
       if (selectTab === 0) {
         return cardData;
       } else {
-        const filteredData = cardData.filter(
-          (card) => card.genre === tabs[selectTab - 1].label
+        const filteredData = tabs[selectTab - 1].songs;
+        return cardData.filter(
+          (card) => card.genre.label === filteredData
         );
-        return filteredData;
       }
     } else {
       return cardData;
@@ -76,9 +76,9 @@ export default function ShowCard({ text, type }) {
           {text}
           {text !== "Songs" &&
             (collapse ? (
-              <span
+              <span 
                 className="show-all-button"
-                onClick={() => setCollapse(collapse)} // setCollapse(!collapse)}
+                onClick={() => setCollapse(!collapse)} // setCollapse(!collapse)}
               >
                 Show all
               </span>
@@ -97,7 +97,7 @@ export default function ShowCard({ text, type }) {
               <Tabs
                 value={selectTab}
                 onChange={handleChange}
-                aria-label="scrollable auto tabs example"
+                aria-label="music genre tabs"
                 textIndicatorProps={{ style: { backgroundColor: "#34C94B" } }}
                 sx={{
                   color: "#fff",
