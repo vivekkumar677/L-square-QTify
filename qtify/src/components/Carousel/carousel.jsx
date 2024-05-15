@@ -1,6 +1,8 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import "./carousel.css";
-import { Slider } from "@mui/material";
+import Slider from "react-slick";
 import Cards from "../Card/card";
 
 export default function Carousel({ cardData, cardType }) {
