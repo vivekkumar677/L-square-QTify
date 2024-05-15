@@ -78,7 +78,7 @@ export default function ShowCard({ text, type }) {
             (collapse ? (
               <span
                 className="show-all-button"
-                onClick={() => setCollapse(!collapse)}
+                onClick={() => setCollapse(collapse)} // setCollapse(!collapse)}
               >
                 Show all
               </span>
